@@ -107,7 +107,7 @@ var Level = Base.extend({
 					if (confirm("ไม่นะ ชั้นแพ้แล้ว สงสัยชั้นต้องฝากคุณช่วยต่อแล้วล่ะ ไปที่เว็บไซต์ของพวกชั้นกันเลย")) {
 						window.location = 'https://solar-cell-pikachu.netlify.app/';
 					  } else {
-						window.location = 'https://www.facebook.com/';
+						window.location = 'https://solar-cell-game.netlify.app/';
 					  }
 					
 					break;
