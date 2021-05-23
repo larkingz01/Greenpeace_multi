@@ -186,6 +186,9 @@ var Level = Base.extend({
 				settings.coins = this.figures[i].coins;
 				settings.state = this.figures[i].state;
 				settings.marioState = this.figures[i].marioState;
+				if(settings.marioState == 7){
+					alert("Test");
+				}
 				break;
 			}
 		}
