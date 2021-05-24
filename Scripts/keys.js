@@ -1,11 +1,3 @@
-﻿/*
- * *****
- * WRITTEN BY FLORIAN RAPPL, 2012.
- * florian-rappl.de
- * mail@florian-rappl.de
- * *****
- */
-
 var keys = {
 	bind : function() {
 		$(document).on('keydown', function(event) {	
