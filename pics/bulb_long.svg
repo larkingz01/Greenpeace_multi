@@ -1,0 +1,51 @@
+<svg viewBox="0 0 500 220" id="ff13122b-c9a2-4eb3-994d-202711f70fc9" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+    <filter id="blurMe">
+       <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+     <radialGradient id="head"  cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+     <stop offset="0%" style="stop-color:#fff  ;
+      stop-opacity:1" /> 
+      <stop offset="100%" style="stop-color:#9badb7;stop-opacity:1" />
+    </radialGradient>
+    <line x1="250" y1="0" x2="250" y2="100" stroke="black" stroke-width="5" />
+    <line x1="237" x2="263" y1="100" y2="100" stroke="black" stroke-width="5"/>
+    <line x1="232" x2="268" y1="105" y2="105" stroke="black" stroke-width="5"/>
+
+    <line x1="229.5" x2="229.5" y1="107" y2="140" stroke="black" stroke-width="5"/>
+    <line x1="270.5" x2="270.5" y1="107" y2="140" stroke="black" stroke-width="5"/>
+
+    <rect width="36" height="35" x="232" y="107.7" fill="#D3D0D3" />
+
+    <line x1="223" x2="276" y1="117" y2="117" stroke="black" stroke-width="5"/>
+    <line x1="223" x2="276" y1="128" y2="128" stroke="black" stroke-width="5"/>
+
+    <line x1="227" x2="273" y1="140" y2="140" stroke="black" stroke-width="5"/> 
+
+    <path fill="url(#head)" d="M227,142.5 l0,0 -13,13 v37.5 l0,0 13,13 h45 l0,0 13.5,-13.5 v-37.5 l0,0 -13,-13" style="fill-opacity: .35;"/>
+
+    <rect width="6" height="6" x="221" y="142" fill="black" />
+    <rect width="6" height="6" x="215" y="148" fill="black" />
+
+    <line x1="213" x2="213" y1="154" y2="194" stroke="black" stroke-width="5"/>
+
+    <!--  -->
+    <rect width="4" height="4" x="229" y="149" fill="#526e79" />
+    <rect width="4" height="4" x="226" y="153" fill="#526e79" />
+
+    <line x1="225" x2="225" y1="157" y2="177" stroke="#526e79" stroke-width="3"/>
+    <!--  -->
+
+    <rect width="6" height="6" x="215" y="194" fill="black" />
+    <rect width="6" height="6" x="221" y="200" fill="black" />
+
+    <line x1="227" x2="273" y1="208.5" y2="208.5" stroke="black" stroke-width="5"/>
+
+    <rect width="6" height="6" x="279" y="194" fill="black" />
+    <rect width="6" height="6" x="273" y="200" fill="black" />
+
+    <line x1="287" x2="287" y1="154" y2="194" stroke="black" stroke-width="5"/>
+
+    <rect width="6" height="6" x="279" y="148" fill="black" />
+    <rect width="6" height="6" x="273" y="142" fill="black" />
+</svg>

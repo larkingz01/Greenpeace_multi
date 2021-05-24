@@ -1,0 +1,67 @@
+<svg viewBox="0 0 500 400" id="ff13122b-c9a2-4eb3-994d-202711f70fc9" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+    <filter id="blurMe">
+       <feGaussianBlur stdDeviation="6.5"/>
+    </filter>
+
+     <radialGradient id="head"  cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+     <stop offset="0%" style="stop-color:#fff  ;
+      stop-opacity:1" /> 
+      <stop offset="100%" style="stop-color:#FFFE5B;stop-opacity:1" />
+    </radialGradient>
+  <radialGradient id="rad"  cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+     <stop offset="60%" style="stop-color:#1B4A83  ;
+      stop-opacity:1" /> 
+      <stop offset="100%" style="stop-color:#1B4A83;stop-opacity:0" />
+    </radialGradient>
+  <radialGradient id="rad2"  cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+     <stop offset="60%" style="stop-color:#01072C  ;
+      stop-opacity:1" /> 
+      <stop offset="100%" style="stop-color:#01072C;stop-opacity:0" />
+    </radialGradient>
+    
+    <circle cx="250" cy="124" r="90" fill="url(#rad2)" filter="url(#blurMe)"/>
+    <circle cx="250" cy="124" r="70" fill="url(#rad)" filter="url(#blurMe)"/>
+
+  
+    <line x1="250" y1="0" x2="250" y2="50" stroke="black" stroke-width="5" />
+    <line x1="237" x2="263" y1="50" y2="50" stroke="black" stroke-width="5"/>
+    <line x1="232" x2="268" y1="55" y2="55" stroke="black" stroke-width="5"/>
+
+    <line x1="229.5" x2="229.5" y1="57" y2="90" stroke="black" stroke-width="5"/>
+    <line x1="270.5" x2="270.5" y1="57" y2="90" stroke="black" stroke-width="5"/>
+
+    <rect width="36" height="35" x="232" y="57.7" fill="#D3D0D3" />
+
+    <line x1="223" x2="276" y1="67" y2="67" stroke="black" stroke-width="5"/>
+    <line x1="223" x2="276" y1="78" y2="78" stroke="black" stroke-width="5"/>
+
+    <line x1="227" x2="273" y1="90" y2="90" stroke="black" stroke-width="5"/> 
+
+  
+    <circle cx="250" cy="124" r="40" fill="url(#head)" filter="url(#blurMe)"/>
+
+    <rect width="6" height="6" x="221" y="92" fill="black"  style="fill-opacity: .5;"/>
+    <rect width="6" height="6" x="215" y="98" fill="black"  style="fill-opacity: .5;"/>
+
+    <line x1="213" x2="213" y1="104" y2="144" stroke="black" stroke-width="5" style="stroke-opacity: .5;"/>
+
+    <!--  -->
+    <rect width="4" height="4" x="229" y="99" fill="#526e79" style="fill-opacity: .5;"/>
+    <rect width="4" height="4" x="226" y="103" fill="#526e79" style="fill-opacity: .5;"/>
+
+    <line x1="225" x2="225" y1="107" y2="127" stroke="#526e79" stroke-width="3" style="stroke-opacity: .5;"/>
+    <!--  -->
+
+    <rect width="6" height="6" x="215" y="144" fill="black"  style="fill-opacity: .5;"/>
+    <rect width="6" height="6" x="221" y="150" fill="black"  style="fill-opacity: .5;"/>
+
+    <line x1="227" x2="273" y1="158.5" y2="158.5" stroke="black" stroke-width="5"  style="stroke-opacity: .5;"/>
+
+    <rect width="6" height="6" x="279" y="144" fill="black" style="fill-opacity: .5;"/>
+    <rect width="6" height="6" x="273" y="150" fill="black" style="fill-opacity: .5;"/>
+
+    <line x1="287" x2="287" y1="104" y2="144" stroke="black" stroke-width="5" style="stroke-opacity: .5;"/>
+
+    <rect width="6" height="6" x="279" y="98" fill="black" style="fill-opacity: .5;"/>
+    <rect width="6" height="6" x="273" y="92" fill="black" style="fill-opacity: .5;"/>
+</svg>

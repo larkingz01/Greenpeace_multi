@@ -1,0 +1,130 @@
+<svg viewBox="0 0 1000 500" id="ff13122b-c9a2-4eb3-994d-202711f70fc9" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+		<filter id="blurMe">
+       <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <pattern id="isometric" width="25" height="12.5" viewBox="0 0 10 5" patternUnits="userSpaceOnUse" x="0" y="0" >
+          <g stroke="#0004" stroke-dasharray="2 1" stroke-width=".25">
+            <path d="m0,0 v100"/>
+            <path d="m10,0 v100"/>
+          </g>
+          <path d="m5,0 v100" stroke-width=".25" stroke="#0004" stroke-dasharray=".5"/>
+          <g stroke-width=".25" stroke="#0004">
+            <path d="m0,0 l10,5"/>
+            <path d="m10,0 l-10,5"/>
+          </g>
+    </pattern>
+    <pattern id="first_floor" width="25" height="25" viewBox="0 0 5 5" patternUnits="userSpaceOnUse" x="0" y="0">
+          <rect height="5" width="5" fill="#57585B" />
+          <circle cx="2.5" cy="2.5" r="0.3" fill="green" />
+          <circle cx="1" cy="1" r="0.1" fill="white" />
+          <circle cx="1.5" cy="2.5" r="0.1" fill="white" />
+    </pattern>
+    <defs>
+      <filter id="f1" height="120%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+        <feOffset dx="2" dy="2" result="offsetblur"/>
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.5"/>
+        </feComponentTransfer>
+        <feMerge> 
+          <feMergeNode/> 
+          <feMergeNode in="SourceGraphic"/> 
+        </feMerge>
+      </filter>
+    </defs>
+    
+    <!-- <path d="M100,275 L100,275 100,290 L100,290 500,488 L500,488 900,290 L900,290 900,275" fill="#30B468" />
+    <path d="M100,275 L100,275 500,75 L500,75 900,275 L900,275 500,475 L500,475 100,275" fill="#BAE1F7" /> -->
+    <ellipse cx="500" cy="265" rx="352" ry="200" fill="#11733B" />
+    <ellipse cx="500" cy="250" rx="350" ry="200" fill="#6A8BC3" />
+
+    <path d="M225,263 v-88 l0,0 101,50 v88 l0,0 -100,-49.5" fill="#3F4146" />
+        <g fill="#095794" stroke="white" stroke-width="2" stroke-linejoin="round">
+          <path d="M245,255 v-50 l0,0 20,10 v50 l0,0 -20,-10" />
+          <path d="M285,275 v-50 l0,0 20,10 v50 l0,0 -20,-10" />
+        </g>
+
+        <g fill="#fffcbb" filter="url(#blurMe)">
+          <path d="M245,255 v-50 l0,0 20,10 v50 l0,0 -20,-10" />
+          <path d="M285,275 v-50 l0,0 20,10 v50 l0,0 -20,-10" />
+        </g>
+
+    <path d="M225,175 l0,0 62,-32 l0,0 101,51 v88 l0,0 -63.5,31 v-88 l0,0 -75,-37" fill="#2D2F33" />
+    
+    <path d="M388,194 l0,0 200,100 v87.5 l0,0 -200,-100 v-87.5" fill="#3F4146" />
+    <path d="M425,230 v70 l0,0 50,25 v-70 l0,0 -50,-25" fill="#7188A6" />
+        <g fill="#095794" stroke="white" stroke-width="2" stroke-linejoin="round">
+          <path d="M430,280 v-30 l0,0 15,8 v30 l0,0 -15,-8" />
+          <path d="M455,295 v-30 l0,0 15,8 v30 l0,0 -15,-8" />
+          <path d="M500,315 v-30 l0,0 28,14 v30 l0,0 -28,-14" />
+          <path d="M540,335 v-30 l0,0 28,14 v30 l0,0 -28,-14" />
+        </g>
+
+        <g fill="#fffcbb" filter="url(#blurMe)">
+          <path d="M430,280 v-30 l0,0 15,8 v30 l0,0 -15,-8" />
+          <path d="M455,295 v-30 l0,0 15,8 v30 l0,0 -15,-8" />
+          <path d="M500,315 v-30 l0,0 28,14 v30 l0,0 -28,-14" />
+          <path d="M540,335 v-30 l0,0 28,14 v30 l0,0 -28,-14" />
+        </g>
+          
+    
+    <path d="M588,294 l0,0 150,-75 v87.5 l0,0 -150,75 v-87.5" fill="#2D2F33" />
+
+    <path d="M285,144 v-50 l0,0 291,144 v70 l0,0 -201,-101 v-19 l0,0 -88,-44" fill="#929292" />
+        <g fill="#095794" stroke="#535559" stroke-width="2" stroke-linejoin="round">
+          <path d="M300,135 v-20 l0,0 70,35 v20 l0,0 -70,-35" />
+          <path d="M420,220 v-50 l0,0 20,10 v50 l0,0 -20,-10 v-30 l0,0 20,10 " />
+          <path d="M480,250 v-50 l0,0 20,10 v50 l0,0 -20,-10 v-30 l0,0 20,10 " />
+        </g>
+
+        <g fill="#fffcbb" filter="url(#blurMe)">
+          <path d="M300,135 v-20 l0,0 70,35 v20 l0,0 -70,-35" />
+          <path d="M420,220 v-50 l0,0 20,10 v50 l0,0 -20,-10 v-30 l0,0 20,10 " />
+          <path d="M480,250 v-50 l0,0 20,10 v50 l0,0 -20,-10 v-30 l0,0 20,10 " />
+        </g>
+
+    <path d="M575,299.5 v-62 l0,0 163.5,-98 v85 l0,0 -163,84" fill="#636363" />
+        <g fill="#095794" stroke="#535559" stroke-width="2" stroke-linejoin="round">
+          <path d="M620,275 v-50 l0,0 20,-12 v50 l0,0 -20,12 v-30 l0,0 20,-12" />
+          <path d="M680,245 v-50 l0,0 20,-12 v50 l0,0 -20,12 v-30 l0,0 20,-12" />
+        </g>
+
+        <g fill="#fffcbb" filter="url(#blurMe)">
+          <path d="M620,275 v-50 l0,0 20,-12 v50 l0,0 -20,12 v-30 l0,0 20,-12" />
+          <path d="M680,245 v-50 l0,0 20,-12 v50 l0,0 -20,12 v-30 l0,0 20,-12" />
+        </g>
+
+    <path d="M575,237.5 l0,0 167.5,-98 l0,0 -275,-137 l0,0 -184,90 " fill="#333436" />
+
+    <path d="M410,85 v20 l0,0 171,87 l0,0 13,-13 v-20" fill="#B0B0B0" />
+
+    <path d="M410,85 v15 l0,0 175,88 l0,0 9,-8 v-15" fill="#7B7B7B" />
+
+    <path d="M604,157 l0,0 20,-7 l0,0 -10,-5" fill="#101011" />
+    <path d="M405,85 v7 l0,0 176,88 l0,0 43,-43 v-5" fill="#4E5255" />
+
+    <path d="M400,85 l0,0 180,90 l0,0 45,-45 l0,0 -180,-90 l0,0 -45,47" stroke="#6F6F6C" fill="#1D1D3B" stroke-width="4" stroke-linejoin="round"/>
+
+    <line x1="420" y1="95" x2="463" y2="48" stroke="#5E5E5E" stroke-width="2" />
+    <line x1="440" y1="105" x2="483" y2="58" stroke="#5E5E5E" stroke-width="2" />
+    <line x1="460" y1="115" x2="503" y2="68" stroke="#5E5E5E" stroke-width="2" />
+    <line x1="480" y1="125" x2="523" y2="78" stroke="#5E5E5E" stroke-width="2" />
+    <line x1="500" y1="135" x2="543" y2="88" stroke="#5E5E5E" stroke-width="2" />
+    <line x1="520" y1="145" x2="563" y2="98" stroke="#5E5E5E" stroke-width="2" />
+    <line x1="540" y1="155" x2="583" y2="108" stroke="#5E5E5E" stroke-width="2" />
+    <line x1="560" y1="165" x2="603" y2="118" stroke="#5E5E5E" stroke-width="2" />
+
+    <line x1="415" y1="70" x2="595" y2="160" stroke="#5E5E5E" stroke-width="2" />
+    <line x1="430" y1="55" x2="610" y2="145" stroke="#5E5E5E" stroke-width="2" />
+
+    <circle cx="180" cy="270" r="15" fill="#226A41" filter="url(#f1)" />
+    <circle cx="500" cy="380" r="15" fill="#226A41" filter="url(#f1)" />
+
+    <path d="M795,200 v90 c 0,5 10,5 10,0 v-90" fill="#2A2B2C"/>
+    <ellipse cx="800" cy="180" rx="20" ry="60" fill="#226A41" stroke-width="2" />
+    
+    <circle cx="170" cy="95" r="50" fill="#30B468" />
+    <path d="M170, 125 l0,0 3,-25 h-20 l0,0 20,-35 l0,0 -3,23 h20" stroke="none" fill="yellow" />
+    <!-- <rect fill="url(#isometric)" height="1000" width="1000" /> -->
+</svg>
