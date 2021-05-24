@@ -104,7 +104,7 @@ var Level = Base.extend({
             if (this.figures[i] instanceof Mario) {
                 settings.lifes = this.figures[i].lifes - 1;
                 if (settings.lifes == -1) {
-                    if (confirm("ไม่นะ! ชั้นแพ้แล้ว!! ชั้นทำเรื่องนี้คนเดียวไม่ไหว ชั้นต้องฝากพวกคุณช่วยต่อแล้วล่ะ ไปที่เว็บไซต์ของพวกชั้นแล้วมาช่วยโลกกันเถอะ!!!")) {
+                    if (confirm("ไม่นะ! ฉันแพ้แล้ว!! ฉันทำเรื่องนี้คนเดียวไม่ไหว ฉันต้องฝากพวกคุณช่วยต่อแล้วล่ะ ไปที่เว็บไซต์ของพวกฉันแล้วมาช่วยโลกกันเถอะ!!!")) {
                         window.location.href = "/index_solar.html";
                     } else {
                         window.location = 'https://solar-rooftop-greenpeace.netlify.app/';
