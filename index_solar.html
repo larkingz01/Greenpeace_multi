@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project Greenpeace</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style_dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="icon" href="./pics/game.png">
+</head>
+
+<body>
+    <div class='container' id='container'>
+        <div class='hero' id='hero'>
+            <div class="topic_content">
+                <img src="./pics/brush.png" class="brush">
+                <h1>Solar Rooftop</h1>
+                <div class="between2"></div>
+                <div class='rw-words2 rw-words-2'>
+                    <span>ปฎิวัติพลังงานบนหลังคา<br>ผ่านระบบโซลาร์รูฟท็อปในประเทศไทย</span>
+                    <span>ผลประโยชน์ที่ได้รับจากการใช้โซลาร์เซลล์</span>
+                    <span>โครงการผลิตไฟฟ้าจากพลังงานแสงอาทิตย์<br>แบบติดตั้งบนหลังคา</span>
+                    <span>ปัญหากลุ่มครัวเรือนที่อาจพบเจอ</span>
+                    <span>ผลประโยชน์ที่คาดว่าจะได้รับ<br>หากดำเนินการตามแผนได้ใน 3 ปี</span>
+                    <span>การลดการใช้, การใช้ซ้ำ, การรีไซเคิล</span>
+                </div>
+                <div class="solar-house"></div>
+                <div class="bulb"></div>
+                <div class="bulb2"></div>
+            </div>
+
+            <i class='fa fa-angle-double-down' id='scroll-icon'></i>
+
+        </div>
+
+        <div class='flex-wrapper'>
+            <div class='section' id='page2'>
+                <div class='col-left' id='col-left'>
+                    <h2> <i class="fas fa-quote-left"></i><br>ทำไมต้องใช้ <span class='highlight-secondary'>โซลาร์เซลล์ </span>?</h2>
+                    <div class='paragraph'><span class="highlight"> แผงโซลาร์เซลล์มีราคาถูกลง</span>
+                        <p>อันเนื่องมาจากสารกึ่งตัวนำที่นำมาผลิตโซลาร์เซลล์คือ ซิลิคอน ซึ่งถลุงมาจากทราย <br>และเป็นธาตุที่มีมากที่สุดในโลก อุปกรณ์ที่ผลิตด้วยสารกึ่งตัวนำยังมีราคาถูกและจะราคาถูกลงอีก<br>หากตลาดมีการขยายตัวมากขึ้น</p>
+                        <br><br>
+                        <span class="highlight">ลดการปล่อยก๊าซคาร์บอนไดออกไซด์</span>
+                        <p>การผลิตไฟฟ้าด้วยแผงโซลาร์เซลล์นั้นจะสามารถช่วยลดการปล่อยก๊าซคาร์บอนไดออกไซด์<br>ที่ส่งผลต่อวิกฤตการเปลี่ยนแปลงทางสภาพอากาศ</p>
+                    </div>
+                </div>
+                <!-- เครื่องคำนวณอัจฉริยะ -->
+                <div class='between3'></div>
+                <div class='calculator' id='calculator'>
+                    <p class="solartitle">Solar Calculator</p>
+                    <input type='text' class='cal-select' id='selector-cal' placeholder="ครัวเรือน">
+                    <p class="solartitle">ขนาด (กิโลวัตต์)</p>
+                    <input type='text' class='input-cal' id='size' placeholder="0">
+                    <p class="solartitle">จำนวน (แผง)</p>
+                    <input type='number' class='input-cal' id='amount' min="1" onchange="sizechange()">
+                    <p class="solartitle" id="calculated-fund">ต้นทุน: 0 </p>
+                    <p class="solartitle" id="calculated-save">ประหยัด: 0 </p>
+                    <button class='cal' id="calculate" onclick="calculate(select())">Calculate</button>
+                </div>
+            </div>
+        </div>
+
+        <div class='flex-wrapper'>
+            <div class='section' id='page3'>
+                <div class='col-left' id='col-right'>
+                    <h2> <i class="fas fa-quote-left"></i><br>พัฒนาการของการผลิตไฟฟ้า พลังงานแสงอาทิตย์ที่ติดตั้ง บนหลังคา (Solar PV Rooftop) <span class='highlight-secondary'>ในประเทศไทย</span></h2>
+                    <div class='paragraph'>
+                        <p>ตั้งแต่ช่วงปี2530 ประเทศไทยได้มีการนำระบบผลิตไฟฟ้าพลังงานจากแสงอาทิตย์มาใช้งานเพื่อนำมาเป็นแหล่งพลังงานให้แก่พื้นที่ห่างไกลให้มีน้ำใช้ทั้งทางอุปโภคและเกษตรกรรม <br>และมีไฟฟ้าเป็นแสงสว่างในเวลาค่ำคืน ต่อมารัฐบาลจึงได้มีมาตรการส่งเสริมการผลิตไฟฟ้าจากพลังงานหมุนเวียนมากขึ้น</p>
+                        <span class="highlight-secondary">ตัวอย่างโครงการ</span>
+                        <p>โครงการผลิตไฟฟ้าจากพลังงานแสง อาทิตย์แบบติดตั้งบนหลังคาด้วยอัตรา FiT พ.ศ. 2556</p><br><img src="./pics/FiT.png" id="FiT">
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+                        </div>
+                        <br>
+                        <p>โครงการนำร่อง (Pilot Project) การ ผลิตไฟฟ้าพลังงานแสงอาทิตย์บนหลังคาอย่างเสรี พ.ศ.2559</p>
+                        <p>เป็นการส่งเสริมการติดตั้งโซลาร์รูฟท็อปอย่างเสรีสำหรับบ้านและอาคารเป็นหลัก โดยมีหลักการคือไม่รับซื้อไฟฟ้าส่วนเกิน ที่ไหลย้อนเข้าระบบสายจำหน่าย <br>และมีการยกเว้นค่าธรรมเนียมในการตรวจสอบเพื่อเป็นแรงจูงใจให้ผู้สนใจเข้าร่วมโครงการมากขึ้น</p>
+                    </div>
+                </div>
+                <!-- <div class='between3'></div> -->
+                <div class='#' id='col-left-overlay'></div>
+            </div>
+        </div>
+        <div class='flex-wrapper'>
+            <div class='section' id='page4'>
+                <div class='col-left' id='col-right2'>
+                    <h2> <i class="fas fa-quote-left"></i><br>ปัญหาของกลุ่ม<span class='highlight-secondary'>ครัวเรือน</span>ที่ติดตั้งโซลาร์เซลล์ไว้ใช้เอง</h2>
+                    <div class='paragraph'>
+                        <p>ไฟฟ้าพลังงานแสงอาทิตย์ที่ผลิตได้จากโซลาร์รูฟท็อปอาจมากกว่าปริมาณการใช้ ไฟฟ้าในครัวเรือน เช่น ช่วงไปทำงานนอกบ้านในกลางวัน ทำให้มิเตอร์เกิดการหมุนย้อนกลับ และทำให้ตัวเลขมิเตอร์น้อยลง ส่งผลให้ค่าไฟฟ้าต่ำลงกว่าปกติ หากการไฟฟ้าตรวจพบ
+                            จะทำการแก้ไขด้วยการ ติดตั้งเครื่องป้องกันการหมุนย้อนกลับของมิเตอร์หรือเปลี่ยนเป็นมิเตอร์แบบดิจิตอล ซึ่งทำให้ผู้ที่ติดตั้งมิเตอร์ต้องเสียค่าใช้จ่ายเพิ่มเติมในส่วนนี้
+                        </p>
+                    </div><br><br>
+                    <center>
+                        <div class="imghere"></div><span class="space">aaaaa</span>
+                        <div class="imghere2"></div><span class="space">aaaaa</span>
+                        <div class="imghere3"></div>
+                    </center>
+                </div>
+                <!-- <div class='between3'></div> -->
+                <div class='#' id='col-left-overlay'></div>
+            </div>
+        </div>
+
+        <div class='flex-wrapper'>
+            <div class='section' id='page5'>
+                <div class='col-left' id='col-right3'>
+                    <h2> <i class="fas fa-quote-left"></i><br>ผลประโยชน์ทางสังคมและสิ่งแวดล้อมที่<span class='highlight-secondary'>คาดว่าจะได้รับ</span></h2>
+                    <div class='paragraph'><span class="highlight-secondary">ผลประโยชน์ทางสังคม</span>
+                        <p>ทำให้เกิดการจ้างงาน ไม่ว่าจะเป็นวิศวกร คนงานติดตั้ง รวมทั้งพนักงานที่จะคอยดูแลรักษา<br> ส่งผลให้มีเม็ดเงินหมุนเวียนเข้าสู่ระบบเศรษฐกิจ</p><br>
+                        <br>
+                        <span class="highlight-secondary">ผลประโยชน์ทางสิ่งแวดล้อม</span>
+                        <p>ช่วยลดการผลิตไฟฟ้าจากโรงงานก๊าซธรรมชาติ(เช่นอุตสาหกรรมถ่านหิน) <br>และยังช่วยลดการปล่อยก๊าซเรือนกระจกได้ถึง 1.48 ล้านตันต่อปี</p>
+                    </div>
+                </div>
+                <div class='between3'></div>
+                <div class="imghere4" id='imgfade'></div>
+            </div>
+        </div>
+
+        <div class='flex-wrapper'>
+            <div class='section' id='page6'>
+                <div class='col-center' id='col-right4'>
+                    <h2> <i class="fas fa-quote-left"></i><br>แนวทางการจัดการแผงโซลาร์เซลล์<span class='highlight-secondary'>ตลอดอายุการใช้งาน</span></h2><br>
+                    <div class='paragraph'><span class="highlight-secondary">การลดการใช้(Reduce)</span>
+                        <p>โดยการที่เพิ่มประสิทธิภาพในการทำงานของแผงโซลาร์เซลล์เพื่อให้สามารถใช้งานได้ยาวนานยิ่งขึ้น</p><br>
+                        <span class="highlight-secondary">การใช้ซ้ำ(Reuse)</span>
+                        <p>ถึงแม้ว่าหลังจาก 25-30 ปี แผงโซลาร์เซลล์จะมีประสิทธิภาพในการทำงานลดน้อยลง แต่ก็ยังสามารถนำกลับมาใช้งานซ้ำตามจุดประสงค์ เช่น นำมาใช้งานสำหรับผลิตไฟฟ้า<br>ให้กับเครื่องสูบน้ำเพื่อนำมาใช้งานทางการเกษตร เป็นต้น</p><br>
+                        <span class="highlight-secondary">การรีไซเคิล(Recycle)</span>
+                        <p>เราสามารถนำแผงโซลาร์เซลล์เข้าสู่กระบวนการรีไซเคิลเพื่อนำวัสดุ เช่น กระจก อลูมิเนียม ทองแดง กลับมาใช้งานใหม่ได้ ในอัตราประมาณ 85% ของวัสดุทั้งหมด</p>
+                    </div>
+
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <img src="./pics/3re.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="./pics/graph.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="./pics/solarhouse.jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                </div>
+                <!-- <div class='between3'></div> -->
+                <div class='#' id='col-left-overlay'></div>
+            </div>
+        </div>
+        <div class='flex-wrapper'>
+            <div class='section' id='page7'>
+                <div class='col-center' id='col-right5'>
+                    <h2> <i class="fas fa-quote-left"></i><br>ร่วมเป็นส่วนหนึ่งในการผลักดันรัฐบาลนำงบประมาณฟื้นฟูเศรษฐกิจหลังโควิด-19 กับทาง <span class='highlight-secondary'>Greenpeace</span></h2><br><br>
+                    <center><a href='https://act.greenpeace.org/page/42849/petition/1?_ga=2.23101244.741047470.1620189993-1614142532.1610381465' target="_blank"><button class='pushbtn'>ร่วมผลักดัน <i class="far fa-hand-pointer"></i></button></a></center>
+                </div>
+            </div>
+        </div>
+
+        <a href='https://solar-cell-game.netlify.app/' class="gamebtn" target="_blank"></a>
+
+        <div class="dropdown">
+            <button class="dropbtn"></button>
+            <div class="dropdown-content">
+                <button class="brightbtn" onclick="bright()"></button><br>
+                <button class="darkbtn" onclick="dark()"></button>
+            </div>
+        </div>
+
+        <div class="selectpage">
+            <button class="selectbtn" id="p1"></button><br>
+            <button class="selectbtn" id="p2"></button><br>
+            <button class="selectbtn" id="p3"></button><br>
+            <button class="selectbtn" id="p4"></button><br>
+            <button class="selectbtn" id="p5"></button><br>
+            <button class="selectbtn" id="p6"></button><br>
+            <button class="selectbtn" id="p7"></button>
+        </div>
+
+        <div class="ooo"></div>
+        <div class="ooo2"></div>
+        <div class="ooo3"></div>
+        <div class="ooo4"></div>
+        <div class="ooo5"></div>
+        <div class="ooo6"></div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
