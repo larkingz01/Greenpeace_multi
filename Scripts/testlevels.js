@@ -1,31 +1,3 @@
-﻿/*
- * *****
- * WRITTEN BY FLORIAN RAPPL, 2012.
- * florian-rappl.de
- * mail@florian-rappl.de
- * *****
- */
- 
-/* LEVELS ORIGINALLY BY
- *
- *
- *        MARTIN BUCHNER
- *               &
- *         PATRICK SAAR
- *
- *
- */
-
-/* FORMAT OF A LEVEL FOR JSON SERIALIZATION:
-	{
-		height: int,
-		width: int,
-		data: array[array],
-		id: int,
-		background: int
-	}
-*/
-
 var definedLevels = [
 {
 	width: 252,
@@ -550,30 +522,30 @@ var definedLevels = [
 	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'greenturtle' , 'grass_top'],
 	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top_left_rounded' , 'soil_left' , 'soil_left' , 'grass_top'],
 	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'soil' , 'soil' , 'grass_top'],
-	['' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_left' , 'soil' , 'grass_top_right_rounded_soil'],
-	['' , '' , '' , '' , '' , '' , 'coin' , '' , '' , '' , '' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , '' , 'coin' , '' , '' , '' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , 'coin' , '' , '' , '' , '' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'planted_soil_right' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'planted_soil_left' , 'soil' , 'grass_top_right_rounded_soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_right' , 'soil' , 'soil'],
 	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , 'coin' , '' , '' , 'coin' , '' , '' , 'grass_top' , 'soil' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , 'coin' , '' , '' , 'coin' , '' , '' , 'grass_top' , 'soil' , 'soil' , 'soil'],
 	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'soil' , 'planted_soil_left' , 'soil'],
-	['' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'planted_soil_middle' , 'soil'],
-	['' , '' , '' , '' , '' , 'coin' , '' , '' , 'coin' , '' , '' , 'grass_top' , 'soil' , 'planted_soil_right' , 'soil'],
-	['' , '' , '' , '' , '' , 'coin' , '' , '' , 'coin' , 'coin' , '' , 'grass_top' , 'soil' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , '' , '' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'soil' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'planted_soil_left' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , '' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , 'coin' , '' , '' , '' , '' , 'coin' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , 'coin' , '' , '' , '' , '' , 'coin' , 'grass_top' , 'planted_soil_right' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , '' , 'grass_top' , 'soil' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'soil' , 'soil' , 'soil'],
-	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'soil' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'planted_soil_left' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'planted_soil_middle' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'planted_soil_right' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_left' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_middle' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'planted_soil_right' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
+	['' , '' , '' , '' , '' , '' , 'coin' , 'coin' , 'coin' , 'coin' , 'coin' , 'grass_top' , 'soil' , 'soil' , 'soil'],
 	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'soil' , 'soil' , 'soil'],
 	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'grass_top' , 'soil' , 'soil' , 'soil'],
 	['' , '' , '' , '' , '' , '' , '' , 'brown_block' , 'brown_block' , 'brown_block' , 'brown_block' , 'grass_top' , 'soil' , 'soil' , 'planted_soil_left'],
