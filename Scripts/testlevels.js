@@ -725,7 +725,7 @@ var definedLevels = [
 	width: 194,
 	height: 15,
 	id: 3,
-	background: 8,
+	background: 2,
 	data:
 	[
 	['','','','','','','','','','','','','','grass_top','soil'],
@@ -929,7 +929,7 @@ var definedLevels = [
 	width: 203,
 	height: 15,
 	id: 4,
-	background: 8,
+	background: 2,
 	data:
 	[
 	['','','','','','','','','','','','','','grass_top','soil'],
@@ -2268,7 +2268,7 @@ var definedLevels = [
 	width: 106,
 	height: 15,
 	id: 11,
-	background: 2,
+	background: 7,
 	data:
 	[
 	['','','','','','','','','','','','','','',''],
@@ -2384,7 +2384,7 @@ var definedLevels = [
 	width: 233,
 	height: 15,
 	id: 12,
-	background: 2,
+	background: 7,
 	data:
 	[
 	['','','','','','','','','','','','','','',''],
@@ -2627,7 +2627,7 @@ var definedLevels = [
 	width: 162,
 	height: 15,
 	id: 13,
-	background: 2,
+	background: 7,
 	data:
 	[
 	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , ''],
@@ -2799,7 +2799,7 @@ var definedLevels = [
 	width: 155,
 	height: 15,
 	id: 14,
-	background: 4,
+	background: 8,
 	data:
 	[
 	['' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , '' , 'stone'],
