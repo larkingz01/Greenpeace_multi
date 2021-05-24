@@ -107,7 +107,7 @@ var Level = Base.extend({
                     if (confirm("ไม่นะ! ชั้นแพ้แล้ว!! ชั้นทำเรื่องนี้คนเดียวไม่ไหว ชั้นต้องฝากพวกคุณช่วยต่อแล้วล่ะ ไปที่เว็บไซต์ของพวกชั้นแล้วมาช่วยโลกกันเถอะ!!!")) {
                         window.location.href = "/index_solar.html";
                     } else {
-                        window.location = 'https://solar-cell-game.netlify.app/';
+                        window.location = 'https://solar-rooftop-greenpeace.netlify.app/';
                     }
 
                     break;
