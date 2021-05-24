@@ -32,6 +32,14 @@ body{
 	left: 0px;
 }
 #linkweb {
+	right: 200px;
+	top: 70px;
+}
+#linkweb2 {
+	right: 150px;
+	top: 70px;
+}
+#linkweb3 {
 	right: 80px;
 	top: 70px;
 }
