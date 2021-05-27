@@ -64,7 +64,7 @@ function bright() {
 
     // set the attributes for link element 
     link.rel = 'stylesheet';
-    link.href = 'style.css';
+    link.href = 'style_light.css';
     // Append link element to HTML head
     head.appendChild(link);
 }
