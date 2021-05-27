@@ -414,8 +414,6 @@ button:hover {
 
 .paragraph {
     color: #fff;
-    letter-spacing: 0px;
-    letter-spacing: 0.01rem;
     line-height: 1.5em;
     width: 100%;
     text-align: justify;
@@ -876,7 +874,7 @@ option {
     cursor: zoom-in;
 }
 
-.space {
+.space{
     opacity: 0;
 }
 
@@ -929,35 +927,22 @@ option {
     opacity: 0;
 }
 
-
 /* The Modal (background) */
-
 .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Black w/ opacity */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
-
-
+  
 /* Modal Content (Image) */
-
 .modal-content {
     margin: auto;
     display: block;
@@ -965,9 +950,7 @@ option {
     max-width: 700px;
 }
 
-
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-
 #caption {
     margin: auto;
     display: block;
@@ -979,27 +962,18 @@ option {
     height: 150px;
 }
 
-
 /* Add Animation - Zoom in the Modal */
-
-.modal-content,
-#caption {
+.modal-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
+    from {transform:scale(0)}
+    to {transform:scale(1)}
 }
 
-
 /* The Close Button */
-
 .close {
     position: absolute;
     top: 15px;
@@ -1017,10 +991,8 @@ option {
     cursor: pointer;
 }
 
-
 /* 100% Image Width on Smaller Screens */
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
     }
@@ -1065,17 +1037,17 @@ option {
     .ooo6 {
         bottom: -564%;
     }
-    .imghere {
+    .imghere{
         width: 200px;
         height: 200px;
         background-position: -80px 0px;
     }
-    .imghere2 {
+    .imghere2{
         width: 200px;
         height: 200px;
         background-position: -80px 0px;
     }
-    .imghere3 {
+    .imghere3{
         width: 200px;
         height: 200px;
         background-position: -80px 0px;
@@ -1129,17 +1101,17 @@ option {
     .ooo6 {
         bottom: -631%;
     }
-    .imghere {
+    .imghere{
         width: 250px;
         height: 250px;
         background-position: -80px 0px;
     }
-    .imghere2 {
+    .imghere2{
         width: 250px;
         height: 250px;
         background-position: -80px 0px;
     }
-    .imghere3 {
+    .imghere3{
         width: 250px;
         height: 250px;
         background-position: -80px 0px;
@@ -1210,17 +1182,17 @@ option {
     .ooo6 {
         bottom: -551%;
     }
-    .imghere {
+    .imghere{
         width: 300px;
         height: 300px;
         background-position: -80px 0px;
     }
-    .imghere2 {
+    .imghere2{
         width: 300px;
         height: 300px;
         background-position: -80px 0px;
     }
-    .imghere3 {
+    .imghere3{
         width: 300px;
         height: 300px;
         background-position: -80px 0px;
