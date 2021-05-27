@@ -64,7 +64,7 @@ function bright() {
 
     // set the attributes for link element 
     link.rel = 'stylesheet';
-    link.href = 'style_light.css';
+    link.href = 'style.css';
     // Append link element to HTML head
     head.appendChild(link);
 }
@@ -394,6 +394,13 @@ window.onscroll = function() {
 document.getElementById("size").disabled = true;
 document.getElementById("selector-cal").disabled = true;
 
+function thousands_separators(num)
+{
+    var num_parts = num.toString().split(".");
+    num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return num_parts.join(".");
+}
+
 function select() {
     var selected = document.getElementById("selector-cal").value;
     var choose = 0;
@@ -422,20 +429,10 @@ function calculate() {
         var fund = 60000 * num_amount;
         var save = 10403 * num_amount;
     }
-    if (save > 999999) {
-        save /= 1000000;
-        var unit_save = ' ล้านบาท/ปี';
-    } else {
-        var unit_save = ' บาท/ปี';
-    }
-    if (fund > 999999) {
-        fund /= 1000000;
-        var unit_fund = ' ล้านบาท';
-    } else {
-        var unit_fund = ' บาท';
-    }
-    document.getElementById("calculated-fund").innerHTML = 'ต้นทุน: ' + fund + unit_fund;
-    document.getElementById("calculated-save").innerHTML = 'ประหยัด: ' + save + unit_save;
+    var unit_save = ' บาท/ปี';
+    var unit_fund = ' บาท';
+    document.getElementById("calculated-fund").innerHTML = 'ต้นทุน: ' + thousands_separators(fund) + unit_fund;
+    document.getElementById("calculated-save").innerHTML = 'ประหยัด: ' + thousands_separators(save) + unit_save;
 }
 // -- //
 // Image slideshow //
@@ -466,10 +463,10 @@ var modal = document.getElementById("myModal");
 var img = document.getElementById("FiT");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
 }
 
 // Get the <span> element that closes the modal
@@ -477,6 +474,6 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-        modal.style.display = "none";
-    }
-    // -- //
+  modal.style.display = "none";
+}
+// -- //
