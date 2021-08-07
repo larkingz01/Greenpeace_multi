@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eb69e6e3-710a-42f7-9dbe-32d2395af3f0/deploy-status)](https://app.netlify.com/sites/solar-rooftop-greenpeace/deploys)
 # Pikachu-Multi-Project
 
 -----------------------------------------------------
